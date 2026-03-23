@@ -1,0 +1,949 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/weatherddesean1-max/HTBP/blob/main/Homework%201\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "slCDHtaMb1UJ"
+      },
+      "source": [
+        "# Week 1, Session 1: Getting Started with Python\n",
+        "\n",
+        "**Date:** ________Mar 23, 2025___  \n",
+        "**Student Name:** ___De'Sean Dante Weatherd________\n",
+        "\n",
+        "## Learning Objectives\n",
+        "- Understand what Python is and its real-world applications\n",
+        "- Navigate Google Colab interface\n",
+        "- Write first Python programs using `print()`\n",
+        "- Create and use variables\n",
+        "- Understand basic string operations\n",
+        "\n",
+        "---"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "K-xw3AYxb1UM"
+      },
+      "source": [
+        "## Part 1: Introduction to Python\n",
+        "\n",
+        "### What is Python?\n",
+        "Python is a **general-purpose programming language** that is:\n",
+        "- Easy to learn and read (great for beginners!)\n",
+        "- Powerful and versatile\n",
+        "- Used by companies like Google, Netflix, NASA, Instagram\n",
+        "\n",
+        "### What can you do with Python?\n",
+        "- **Data Science & AI**: Analyze data, build machine learning models\n",
+        "- **Web Development**: Build websites and web applications\n",
+        "- **Automation**: Automate repetitive tasks\n",
+        "- **Game Development**: Create games\n",
+        "- **Scientific Computing**: Research and simulations\n",
+        "\n",
+        "### Why Google Colab?\n",
+        "- No installation needed - runs in your browser\n",
+        "- Free cloud computing\n",
+        "- Easy to share and collaborate\n",
+        "- Automatically saves to your Google Drive"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "bSIPFUFdb1UO"
+      },
+      "source": [
+        "---\n",
+        "## Part 2: Your First Python Code - The `print()` Function\n",
+        "\n",
+        "The `print()` function displays output to the screen. It's one of the most basic and useful functions in Python!"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "scXUQhIyb1UP"
+      },
+      "outputs": [],
+      "source": [
+        "# This is a comment - Python ignores anything after the # symbol\n",
+        "# Comments help explain what your code does\n",
+        "\n",
+        "# Let's print our first message!\n",
+        "print(\"Hello, World!\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "u6FiotX0b1UR"
+      },
+      "outputs": [],
+      "source": [
+        "# You can print multiple things\n",
+        "print(\"Welcome to Python!\")\n",
+        "print(\"This is going to be fun!\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "3C83DgMPb1UR"
+      },
+      "outputs": [],
+      "source": [
+        "# Print can also show numbers\n",
+        "print(42)\n",
+        "print(3.14159)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "JBpDdI4Xb1UT"
+      },
+      "outputs": [],
+      "source": [
+        "# Print multiple items at once, separated by commas\n",
+        "print(\"The answer is\", 42)\n",
+        "print(\"Python\", \"is\", \"awesome!\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "fSV1k_f0b1UU"
+      },
+      "source": [
+        "### ✏️ Your Turn!\n",
+        "In the cell below, write code to:\n",
+        "1. Print your name\n",
+        "2. Print your favorite color\n",
+        "3. Print a number that's meaningful to you"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "id": "IA8bv8v_b1UV",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "34ab9924-6701-450d-a3b3-07864c64e154"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "De'Sean\n",
+            "Blue\n",
+            "1\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Follow the pattern and write your code here\n",
+        "print(\"De'Sean\")\n",
+        "print(\"Blue\")\n",
+        "print(1)\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "-tD8W-zsb1UW"
+      },
+      "source": [
+        "---\n",
+        "## Part 3: Comments - Documenting Your Code\n",
+        "\n",
+        "Comments are notes in your code that Python ignores. They help you (and others) understand what your code does.\n",
+        "\n",
+        "**Why use comments?**\n",
+        "- Explain complex code\n",
+        "- Remind yourself what you were thinking\n",
+        "- Help others understand your code\n",
+        "- Temporarily disable code while testing"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "hqIKoD3Eb1Ua"
+      },
+      "outputs": [],
+      "source": [
+        "# This is a single-line comment\n",
+        "\n",
+        "print(\"This will run\")  # Comment at the end of a line\n",
+        "\n",
+        "# print(\"This won't run because it's commented out\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "dzKOS1Nmb1Ub"
+      },
+      "source": [
+        "---\n",
+        "## Part 4: Variables - Storing Information\n",
+        "\n",
+        "A **variable** is like a container that stores a value. You can name it whatever you want (following certain rules) and use it later in your code.\n",
+        "\n",
+        "Think of a variable as a labeled box:\n",
+        "- The label is the **variable name**\n",
+        "- What's inside the box is the **value**"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "8m6REwPub1Ub"
+      },
+      "outputs": [],
+      "source": [
+        "# Creating variables (also called \"assignment\")\n",
+        "name = \"Alice\"\n",
+        "age = 20\n",
+        "height = 5.6\n",
+        "\n",
+        "# Now we can use these variables\n",
+        "print(name)\n",
+        "print(age)\n",
+        "print(height)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "Lm6OA3x2b1Uc"
+      },
+      "outputs": [],
+      "source": [
+        "# Variables can be used in print statements\n",
+        "favorite_food = \"pizza\"\n",
+        "print(\"My favorite food is\", favorite_food)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 5,
+      "metadata": {
+        "id": "P7CvuTAEb1Uc",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "435b03e0-c8f2-4def-cbef-6863b39c60b8"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "I am happy\n",
+            "Now I am elated\n"
+          ]
+        }
+      ],
+      "source": [
+        "# You can change a variable's value\n",
+        "mood = \"happy\"\n",
+        "print(\"I am\", mood)\n",
+        "\n",
+        "mood = \"elated\"  # Changing the value\n",
+        "print(\"Now I am\", mood)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "fdf4f3aa"
+      },
+      "source": [
+        "# Understanding the difference between ',' and '+' in print() statements:\n",
+        "\n",
+        "# 1. Using a comma (',') in print():\n",
+        "#    - The comma is used to separate multiple arguments passed to the print() function.\n",
+        "#    - When you use commas, print() automatically inserts a space between each item it prints.\n",
+        "#    - It can handle different data types (strings, numbers, booleans, etc.) without explicit type conversion.\n",
+        "#      print() converts each item to its string representation before printing.\n",
+        "\n",
+        "print(\"Hello\", \"World!\")       # Output: Hello World! (space added automatically)\n",
+        "print(\"The answer is\", 42)    # Output: The answer is 42 (string and integer combined)\n",
+        "print(10, \"+\", 20, \"=\", 30)   # Output: 10 + 20 = 30\n",
+        "\n",
+        "print(\"----------------------------------------\")\n",
+        "\n",
+        "# 2. Using a plus sign ('+') in print():\n",
+        "#    - The plus sign is usually used for string concatenation (joining strings together).\n",
+        "#    - It does NOT automatically add spaces between the joined items. You must explicitly add spaces if desired.\n",
+        "#    - All items being joined must be of the string data type. If you try to concatenate a string with a non-string (like a number), it will result in a TypeError.\n",
+        "\n",
+        "name = \"Alice\"\n",
+        "age = 30\n",
+        "\n",
+        "print(\"My name is \" + name)       # Output: My name is Alice (no automatic space)\n",
+        "print(\"My name is \" + name + \".\")  # Output: My name is Alice.\n",
+        "\n",
+        "# To combine strings and numbers using '+', the number must first be converted to a string:\n",
+        "print(\"I am \" + str(age) + \" years old.\") # Output: I am 30 years old.\n",
+        "\n",
+        "# This would cause an error because you can't concatenate a string and an integer directly with '+':\n",
+        "# print(\"I am \" + age + \" years old.\") # Uncomment to see TypeError: can only concatenate str (not \"int\") to str\n",
+        "\n",
+        "print(\"----------------------------------------\")\n",
+        "\n",
+        "# Summary:\n",
+        "# - Use ',' when you want print() to handle spacing and type conversion for you, especially when printing a mix of data types.\n",
+        "# - Use '+' for explicit string concatenation when you have full control over the resulting string and all parts are (or can be converted to) strings."
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "nvUiRRTub1Uc"
+      },
+      "source": [
+        "### Variable Naming Rules\n",
+        "\n",
+        "Programming languages often use different 'cases' for naming conventions:\n",
+        "- **`snake_case`**: Words are lowercase and separated by underscores (e.g., `my_variable_name`). This is the most common convention in Python.\n",
+        "- **`camelCase`**: The first word is lowercase, and subsequent words start with an uppercase letter (e.g., `myVariableName`).\n",
+        "- **`PascalCase`**: All words start with an uppercase letter (e.g., `MyClassName`). Often used for class names in Python.\n",
+        "- **`kebab-case`**: Words are lowercase and separated by hyphens (e.g., `my-file-name`). Used in web development (HTML/CSS) but **not for Python variable names**.\n",
+        "\n",
+        "✅ **GOOD variable names:**\n",
+        "- `student_name`\n",
+        "- `age`\n",
+        "- `total_score`\n",
+        "- `firstName` (camelCase is also sometimes seen, though snake_case is preferred in Python)\n",
+        "- `MAX_ATTEMPTS` (constants - values that don't change, often in all caps with underscores)\n",
+        "\n",
+        "❌ **BAD variable names:**\n",
+        "- `2students` - Can't start with a number\n",
+        "- `student-name` - No hyphens allowed\n",
+        "- `student name` - No spaces allowed\n",
+        "- `class` - Can't use Python keywords (reserved words)\n",
+        "\n",
+        "**Best Practices:**\n",
+        "- Use descriptive names: `student_age` instead of `x`\n",
+        "- Use lowercase with underscores: `first_name` (snake_case)\n",
+        "- Be consistent throughout your code"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gRgi8z2Ub1Ud",
+        "outputId": "bec7a8b1-9c9c-4c05-b9e3-b742a3059c9d"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "John Doe\n",
+            "GPA: 3.8\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Examples of good variable naming\n",
+        "first_name = \"John\"\n",
+        "last_name = \"Doe\"\n",
+        "birth_year = 2003\n",
+        "current_year = 2026\n",
+        "gpa = 3.8\n",
+        "\n",
+        "print(first_name, last_name)\n",
+        "print(\"GPA:\", gpa)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "g-sI5jFZb1Ud"
+      },
+      "source": [
+        "### ✏️ Your Turn!\n",
+        "Create variables for the following and print them:\n",
+        "1. Your favorite movie\n",
+        "2. Your lucky number\n",
+        "3. Your hometown\n",
+        "4. Your favorite hobby"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "XN8I5LxGb1Ue"
+      },
+      "outputs": [],
+      "source": [
+        "# Create your variables here\n",
+        "favorite_movie = \"The Matrix\"\n",
+        "lucky_number = 11\n",
+        "hometown = \"Austin, TX\"\n",
+        "favorite_hobby = \"reading\"\n",
+        "\n",
+        "# Print them here\n",
+        "print(favorite_movie)\n",
+        "print(lucky_number)\n",
+        "print(hometown)\n",
+        "print(favorite_hobby)\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "TJ-oEBH7b1Ue"
+      },
+      "source": [
+        "---\n",
+        "## Part 5: Strings - Working with Text\n",
+        "\n",
+        "A **string** is a sequence of characters (text). Strings are always enclosed in quotes.\n",
+        "\n",
+        "You can use:\n",
+        "- Single quotes: `'Hello'`\n",
+        "- Double quotes: `\"Hello\"`\n",
+        "- Triple quotes for multi-line strings: `'''Hello'''` or `\"\"\"Hello\"\"\"`"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "rrFOqUR-b1Ue"
+      },
+      "outputs": [],
+      "source": [
+        "# Different ways to create strings\n",
+        "message1 = 'Hello!'\n",
+        "message2 = \"World!\"\n",
+        "message3 = '''This is a\n",
+        "multi-line\n",
+        "string'''\n",
+        "\n",
+        "print(message1)\n",
+        "print(message2)\n",
+        "print(message3)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "1q6M9p8Ob1Ue"
+      },
+      "outputs": [],
+      "source": [
+        "# When to use single vs double quotes?\n",
+        "# Use the opposite of what's inside the string\n",
+        "\n",
+        "quote1 = \"I'm learning Python\"  # Use double quotes when string contains an apostrophe\n",
+        "quote2 = 'She said, \"Python is fun!\"'  # Use single quotes when string contains double quotes\n",
+        "\n",
+        "print(quote1)\n",
+        "print(quote2)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "YX5zCE9qb1Ue"
+      },
+      "source": [
+        "### String Concatenation - Joining Strings\n",
+        "\n",
+        "You can combine (concatenate) strings using the `+` operator."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 7,
+      "metadata": {
+        "id": "sz7PjSFSb1Uf",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "0aa5c93d-4182-4874-9810-9c5680a813e8"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Alice Johnson\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Basic concatenation\n",
+        "first_name = \"Alice\"\n",
+        "last_name = \"Johnson\"\n",
+        "\n",
+        "# Combine them with a space in between\n",
+        "full_name = first_name + \" \" + last_name\n",
+        "print(full_name)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 8,
+      "metadata": {
+        "id": "GbSJSIZ5b1Uf",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "a9111e09-5889-4511-de8b-3899e9d72bc7"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Afternoon, Bob!\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Building sentences\n",
+        "greeting = \"Afternoon\"\n",
+        "name = \"Bob\"\n",
+        "punctuation = \"!\"\n",
+        "\n",
+        "message = greeting + \", \" + name + punctuation\n",
+        "print(message)  # Output: Hello, Bob!"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 9,
+      "metadata": {
+        "id": "Nrgyl53Pb1Uf",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "6b96abe5-b7e1-4ad1-84fe-f4ff8f6885dc"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "900 Chicon st, Austin, TX 78701\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Multiple concatenations\n",
+        "street = \"900 Chicon st\"\n",
+        "city = \"Austin\"\n",
+        "state = \"TX\"\n",
+        "zip_code = \"78701\"\n",
+        "\n",
+        "address = street + \", \" + city + \", \" + state + \" \" + zip_code\n",
+        "print(address)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "DaY_RwL7b1Uf"
+      },
+      "source": [
+        "### ⚠️ Common Mistake: Mixing Strings and Numbers"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "o6LPQ2Bdb1Ug"
+      },
+      "outputs": [],
+      "source": [
+        "# This will cause an ERROR - you can't add strings and numbers directly\n",
+        "# Uncomment the line below to see the error:\n",
+        "\n",
+        "# age = 25\n",
+        "# message = \"I am \" + age + \" years old\"  # ERROR!\n",
+        "\n",
+        "# We'll learn how to fix this in the next session!"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "VYlWhBbRb1Uh"
+      },
+      "source": [
+        "### ✏️ Your Turn!\n",
+        "Create variables and concatenate them to build sentences:\n",
+        "1. Create your first name, last name, and build full name\n",
+        "2. Create a greeting message using concatenation\n",
+        "3. Build a sentence about your favorite food"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 11,
+      "metadata": {
+        "id": "JFgMzws0b1Uj",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "fe5eb76d-0741-43cd-ec6e-858de0997995"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Afternoon, Alice Johnson!\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Write your concatenation code here\n",
+        "first_name = \"De'Sean\"\n",
+        "last_name = \"Weatherd\"\n",
+        "gretting = \"Good evening\"\n",
+        "favorite_oder = \"Preztel\"\n",
+        "\n",
+        "message = greeting + \", \" + full_name + punctuation\n",
+        "print(message)  # Output: Good evening, De' Sean Weatherd, would you likea preztel\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "A8pdk9bnb1Uj"
+      },
+      "source": [
+        "---\n",
+        "## 🧪 LAB 1: About Me Program\n",
+        "\n",
+        "Now it's time to put everything together! Create a program that introduces yourself using variables and print statements.\n",
+        "\n",
+        "### Requirements:\n",
+        "1. Create variables for:\n",
+        "   - Your name\n",
+        "   - Your age (just as a number for now)\n",
+        "   - Your hometown/city\n",
+        "   - Your favorite food\n",
+        "   - Your hobby or interest\n",
+        "\n",
+        "2. Use `print()` to display a formatted introduction\n",
+        "\n",
+        "3. Use string concatenation to create complete sentences\n",
+        "\n",
+        "4. Add at least **3 comments** explaining different parts of your code\n",
+        "\n",
+        "### Example Output:\n",
+        "```\n",
+        "Hello! My name is Sarah Johnson.\n",
+        "I am from Austin, Texas.\n",
+        "My favorite food is pizza.\n",
+        "In my free time, I enjoy photography.\n",
+        "```\n",
+        "\n",
+        "**Bonus Challenge:**\n",
+        "- Make your output more creative and personalized!\n",
+        "- Add more information about yourself\n",
+        "- Use emoji in your strings (copy/paste from the web)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 12,
+      "metadata": {
+        "id": "VmN6bLUNb1Uj",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "9f9e1e0e-b2f8-4409-9659-3c00aa14182d"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "--------------------------------------------------\n",
+            "Hello! My name is De’ Sean Dante Weatherd.\n",
+            "I am 19 years old and currently studying in Austin.\n",
+            "I am originally from Huntington, Texas.\n",
+            "If I'm picking a meal, my favorite food is Texas BBQ 🍖.\n",
+            "In my free time, I enjoy building robotics and space exploration 🚀.\n",
+            "--------------------------------------------------\n",
+            "Current Goal: Merging my love for Aerospace with Mechanical Engineering! 🛠️🛰️\n"
+          ]
+        }
+      ],
+      "source": [
+        "# LAB 1: About Me Program\n",
+        "# Write your code below\n",
+        "\n",
+        "# Step 1: Create your variables\n",
+        "\n",
+        "\n",
+        "# Step 2: Print your introduction using the variables\n",
+        "\n",
+        "\n",
+        "# Step 3: Make sure you have at least 3 comments!\n",
+        "# --- STEP 1: Defining personal variables ---\n",
+        "# Using descriptive variable names to store my background info\n",
+        "full_name = \"De’ Sean Dante Weatherd\"\n",
+        "age = 19\n",
+        "hometown = \"East Texas, Texas\"\n",
+        "favorite_food = \"Texas BBQ 🍖\"\n",
+        "hobby = \"building robotics and space exploration 🚀\"\n",
+        "\n",
+        "# --- STEP 2: Creating the introduction ---\n",
+        "# We use string concatenation (joining strings with '+')\n",
+        "# Note: We must convert the age (int) to a string using str() to avoid errors!\n",
+        "intro_sentence = \"Hello! My name is \" + full_name + \".\"\n",
+        "location_sentence = \"I am originally from \" + hometown + \".\"\n",
+        "food_sentence = \"If I'm picking a meal, my favorite food is \" + favorite_food + \".\"\n",
+        "hobby_sentence = \"In my free time, I enjoy \" + hobby + \".\"\n",
+        "\n",
+        "# --- STEP 3: Printing the formatted output ---\n",
+        "# This displays the final personalized message to the console\n",
+        "print(\"--------------------------------------------------\")\n",
+        "print(intro_sentence)\n",
+        "print(\"I am \" + str(age) + \" years old and currently studying in Austin.\")\n",
+        "print(location_sentence)\n",
+        "print(food_sentence)\n",
+        "print(hobby_sentence)\n",
+        "print(\"--------------------------------------------------\")\n",
+        "\n",
+        "# Bonus: Adding a bit of engineering flair\n",
+        "print(\"Current Goal: Merging my love for Aerospace with Mechanical Engineering! 🛠️🛰️\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "oDTfEg8xb1Uk"
+      },
+      "source": [
+        "---\n",
+        "## 📝 Reflection Questions\n",
+        "\n",
+        "Answer these questions in the markdown cell below (double-click to edit):\n",
+        "\n",
+        "1. What was the most interesting thing you learned today?\n",
+        "2. What was the most challenging part?\n",
+        "3. What questions do you still have?"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "xe_YW-Bcb1Uk"
+      },
+      "source": [
+        "**Your Answers:**\n",
+        "\n",
+        "1. Most interesting:\n",
+        "The mosy intesting thing I learned was about the impotance of strings and how to mergae values, akso what a value is and how to write one.\n",
+        "\n",
+        "2. Most challenging:\n",
+        "Conetations and combing large setences togther/ the details to write a sequence and give orders to the computer\n",
+        "\n",
+        "3. Questions:\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "---\n",
+        "## Part 6: GitHub Deep Dive - Team Collaboration\n",
+        "\n",
+        "### Understanding Git vs GitHub\n",
+        "\n",
+        "**Git:**\n",
+        "- Version control system\n",
+        "- Tracks changes to your code\n",
+        "- Works on your computer (local)\n",
+        "\n",
+        "**GitHub:**\n",
+        "- Website that hosts Git repositories\n",
+        "- Allows collaboration\n",
+        "- Backup in the cloud\n",
+        "- Portfolio for developers\n",
+        "\n",
+        "### Key Concepts\n",
+        "\n",
+        "- **Repository (repo):** Project folder with Git tracking\n",
+        "- **Commit:** Saved snapshot of your code\n",
+        "- **Push:** Upload changes to GitHub\n",
+        "- **Pull:** Download changes from GitHub\n",
+        "- **Fork:** Copy someone's repo to your account\n",
+        "- **Clone:** Download repo to your computer\n",
+        "- **Branch:** Separate line of development\n",
+        "- **Pull Request (PR):** Propose changes to main code\n",
+        "- **Merge:** Combine changes from different branches"
+      ],
+      "metadata": {
+        "id": "2Jf7CWsMjGxN"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Your Personal Workflow (Individual Assignments)\n",
+        "\n",
+        "**Step 1: Fork the course repository**, we'll do this together in class.\n",
+        "\n",
+        "```\n",
+        "1. Go to the course repo on GitHub\n",
+        "2. Click \"Fork\" button (top right)\n",
+        "3. This creates YOUR copy of the repo\n",
+        "```\n",
+        "\n",
+        "**Step 2: Open in Google Colab**\n",
+        "```\n",
+        "1. In YOUR forked repo, navigate to a notebook\n",
+        "2. Click on the .ipynb file\n",
+        "3. Click \"Open in Colab\" badge (or copy URL to Colab)\n",
+        "```\n",
+        "\n",
+        "**Step 3: Work on your notebook**\n",
+        "```\n",
+        "1. Complete your work in Colab\n",
+        "2. Make sure to run all cells\n",
+        "3. Test everything works\n",
+        "```\n",
+        "\n",
+        "**Step 4: Save to GitHub**\n",
+        "```\n",
+        "1. File → Save a copy in GitHub\n",
+        "2. Select YOUR repository (the forked one)\n",
+        "3. Choose the correct path\n",
+        "4. Rename: week#_session#_yourname.ipynb\n",
+        "5. Add commit message: \"Complete Week # Session #\"\n",
+        "6. Click OK\n",
+        "```\n",
+        "\n",
+        "**Step 5: Add instructor as collaborator**\n",
+        "```\n",
+        "1. Go to your GitHub repo\n",
+        "2. Settings → Collaborators\n",
+        "3. Add: avisink\n",
+        "4. This allows me to see and grade your work\n",
+        "```"
+      ],
+      "metadata": {
+        "id": "17spo8uZkkQE"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "otD0j7K3b1Uk"
+      },
+      "source": [
+        "---\n",
+        "## 🏠 Homework (Before Next Session)\n",
+        "\n",
+        "1. **Complete Lab 1** if you didn't finish in class\n",
+        "\n",
+        "2. **Create a GitHub account** at https://github.com\n",
+        "   - Use a good username (you'll use this for future jobs/projects!)\n",
+        "   - Verify your email\n",
+        "   - Write down your username: _______________\n",
+        "\n",
+        "3. **Watch:** \"[What is GitHub?\"](https://youtu.be/I_HUpijfGtg?t=68)\n",
+        "\n",
+        "4. **Practice:** Create 5 different variables with meaningful names and print them\n",
+        "\n",
+        "---\n",
+        "\n",
+        "## 💾 Saving Your Work\n",
+        "\n",
+        "**Before you close this notebook:**\n",
+        "\n",
+        "1. Click **Save in Github to keep changes**\n",
+        "2. **File naming convention:** `week1_session1_yourname.ipynb`\n",
+        "3. Add me as a collaborator on your repository. My username is avisink on Github.\n",
+        "\n",
+        "---\n",
+        "\n",
+        "## 🎯 Key Takeaways\n",
+        "\n",
+        "Today you learned:\n",
+        "- ✅ What Python is and why it's useful\n",
+        "- ✅ How to use Google Colab\n",
+        "- ✅ How to print output with `print()`\n",
+        "- ✅ How to write comments with `#`\n",
+        "- ✅ How to create and use variables\n",
+        "- ✅ How to work with strings and concatenate them\n",
+        "\n",
+        "**Great job on your first Python session! 🎉**\n",
+        "\n",
+        "See you next time!"
+      ]
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Python 3",
+      "language": "python",
+      "name": "python3"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "ipython",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8.0"
+    },
+    "colab": {
+      "provenance": [],
+      "toc_visible": true,
+      "include_colab_link": true
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
